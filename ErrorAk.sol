@@ -8,7 +8,7 @@ contract ErrorHandling {
         return amount;
     }
 
-    function square(uint256 s) public pure returns (uint) {
+    function square(int256 s) public pure returns (int) {
         if (s <= 0) {
             revert("Input should be greater than 0 to calculate square");
         } else {
